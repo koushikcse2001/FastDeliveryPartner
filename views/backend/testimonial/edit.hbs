@@ -1,0 +1,66 @@
+<body>
+    <main id="main" class="main">
+        <div class="pagetitle">
+            <h1>Data Edit</h1>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/admin">Admin</a></li>
+                    <li class="breadcrumb-item"><a href="/admin/testimonial">Testimonial</a></li>
+                    <li class="breadcrumb-item active">{{title}}</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
+        <section class="section">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Enter Your Testimonial Details</h5>
+                        <!-- Floating Labels Form -->
+                        <form class="row g-3 my-3" method="post" action="/admin/testimonial/{{testimonial.id}}/update"
+                            enctype="multipart/form-data">
+
+                            <div class="col-md-12">
+                                <label>Image</label>
+                                <div class="form-floating">
+                                    <input type="file" class="form-control" name="image">
+                                    <img src="/{{testimonial.image}}" width="200px" alt="{{testimonial.name}}">
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <input value="{{testimonial.name}}" type="text" class="form-control"
+                                        id="floatingName" placeholder="Title" name="name">
+                                    <label for="floatingName">Name</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <input value="{{testimonial.designation}}" type="text" class="form-control"
+                                        id="floatingName" placeholder="Title" name="designation">
+                                    <label for="floatingName">Designation</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <input value="{{testimonial.details}}" type="text" class="form-control"
+                                        id="floatingName" placeholder="Title" name="details">
+                                    <label for="floatingName">Details</label>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Update</button>
+                                <button type="reset" class="btn btn-secondary">Clear</button>
+                            </div>
+                        </form><!-- End floating Labels Form -->
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main><!-- End #main -->
+</body>

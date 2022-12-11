@@ -1,0 +1,197 @@
+{{!-- <h1>{{tittle}}</h1> --}}
+<br>
+<br>
+<br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .color {
+        color: rgba(13, 66, 255, 0.8);
+    }
+
+    .section-tittle {
+        text-align: center
+    }
+
+
+    <style>.fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+
+    .fa-google {
+        background: #dd4b39;
+        color: white;
+    }
+
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+
+    .fa-youtube {
+        background: #bb0000;
+        color: white;
+    }
+
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
+
+    .fa-pinterest {
+        background: #cb2027;
+        color: white;
+    }
+
+    .fa-snapchat-ghost {
+        background: #fffc00;
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    .fa-skype {
+        background: #00aff0;
+        color: white;
+    }
+
+    .fa-android {
+        background: #a4c639;
+        color: white;
+    }
+
+    .fa-dribbble {
+        background: #ea4c89;
+        color: white;
+    }
+
+    .fa-vimeo {
+        background: #45bbff;
+        color: white;
+    }
+
+    .fa-tumblr {
+        background: #2c4762;
+        color: white;
+    }
+
+    .fa-vine {
+        background: #00b489;
+        color: white;
+    }
+
+    .fa-foursquare {
+        background: #45bbff;
+        color: white;
+    }
+
+    .fa-stumbleupon {
+        background: #eb4924;
+        color: white;
+    }
+
+    .fa-flickr {
+        background: #f40083;
+        color: white;
+    }
+
+    .fa-yahoo {
+        background: #430297;
+        color: white;
+    }
+
+    .fa-soundcloud {
+        background: #ff5500;
+        color: white;
+    }
+
+    .fa-reddit {
+        background: #ff5700;
+        color: white;
+    }
+
+    .fa-rss {
+        background: #ff6600;
+        color: white;
+    }
+</style>
+
+
+</style>
+<!-- ======= Team Section ======= -->
+<section id="team" class="team section-bg">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2 style="text-align:center;" class="color">Team</h2>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+                sit in iste officiis commodi quidem hic quas.so we should take proper crefull on of this section.We have
+                highly talented developer team .</p>
+        </div>
+
+        <div class="row">
+
+            {{#each team}}
+
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="pic"><img src="/{{image}}" width="50%" height="50%" class="img-fluid" alt="{{name}}"></div>
+                    <div class="member-info">
+                        <h4>{{name}}</h4>
+                        <span>{{designation}}</span>
+                        <p>{{description}}</p>
+                        <div class="social">
+                            <a href="{{github}}" class="fa fa-github"></a>
+                            <a href="{{facebook}}" class="fa fa-facebook"></a>
+                            <a href="{{twitter}}" class="fa fa-twitter"></a>
+                            <a href="{{instagram}}" class="fa fa-instagram"></a>
+                            <a href="{{linkdin}}" class="fa fa-linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{/each}}
+
+            {{!-- <div class="col-lg-6 mt-4 mt-lg-0">
+                <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="pic"><img src="frontend/team/team/alif.jpg" class="img-fluid" alt=""></div>
+                    <div class="member-info">
+                        <h4>Md Alif Hossain Munna</h4>
+                        <span>Product Manager</span>
+                        <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                        <div class="social">
+                            <a href="https://github.com/0alif" class="fa fa-github"></a>
+                            <a href="https://www.facebook.com/0Aalif/" class="fa fa-facebook"></a>
+                            <a href="https://twitter.com/0aalif/" class="fa fa-twitter"></a>
+                            <a href="https://www.linkedin.com/in/alif-hossain-munna/" class="fa fa-linkedin"></a>
+                            <a href="https://www.instagram.com/0Aalif/" class="fa fa-instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div> --}}
+
+        </div>
+
+    </div>
+</section>
+<!-- End Team Section -->

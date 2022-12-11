@@ -1,0 +1,57 @@
+{{!-- <h1>{{tittle}}</h1> --}}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- ======= About Us Section ======= -->
+<section id="about" class="about pt-0">
+    <div class="container" data-aos="fade-up">
+        {{#each about}}
+        <div class="row gy-4">
+            <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
+                <img src="/{{image}}" class="img-fluid"  alt="{{title}}">
+                <a href="{{link}}" class="glightbox play-btn"></a>
+            </div>
+            <div class="col-lg-6 content order-last  order-lg-first">
+
+
+
+                <h3>About Us</h3>
+                <h5 style="color:blue;">{{title}}</h5>
+                <p>{{details}}</p>
+                <ul>
+                    <li data-aos="fade-up" data-aos-delay="100">
+                        <i class="bi bi-diagram-3"></i>
+                        <div>
+                            <h5>Ullamco laboris nisi ut aliquip consequat</h5>
+                            <p>{{details2}}</p>
+                        </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="200">
+                        <i class="bi bi-fullscreen-exit"></i>
+                        <div>
+                            <h5>Magnam soluta odio exercitationem reprehenderi</h5>
+                            <p>{{details3}}</p>
+                        </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="300">
+                        <i class="bi bi-broadcast"></i>
+                        <div>
+                            <h5>Voluptatem et qui exercitationem</h5>
+                            <p>{{details4}}</p>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</section>
+<!-- End About Us Section -->

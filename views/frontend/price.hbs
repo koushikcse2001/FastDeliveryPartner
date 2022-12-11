@@ -1,0 +1,39 @@
+<br>
+<br>
+<br>
+<br>
+<!-- ======= Pricing Section ======= -->
+<section id="pricing" class="pricing pt-0">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-header">
+      <span>Price</span>
+      <h2>Price</h2>
+
+    </div>
+
+    <div class="row gy-4">
+
+      {{#each price}}
+
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="pricing-item">
+          <h3>Developer Payment </h3>
+          <h4><sup>$</sup>{{title}}<span> /{{details}}</span></h4>
+          <ul>
+            <li><i class="bi bi-check"></i>{{details2}}</li>
+            <li><i class="bi bi-check"></i>{{details3}}</li>
+            <li><i class="bi bi-check"></i>{{details4}}</li>
+            <li><i class="bi bi-check"></i>{{details5}}</li>
+            <li><i class="bi bi-check"></i>{{details6}}</li>
+          </ul>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+      </div><!-- End Pricing Item -->
+
+      {{/each}}
+      
+    </div>
+
+  </div>
+</section><!-- End Pricing Section -->

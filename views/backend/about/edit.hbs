@@ -1,0 +1,91 @@
+<body>
+    <main id="main" class="main">
+        <div class="pagetitle">
+            <h1>Data Edit</h1>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/admin">Admin</a></li>
+                    <li class="breadcrumb-item"><a href="/admin/about">About</a></li>
+                    <li class="breadcrumb-item active">{{title}}</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
+        <section class="section">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Enter Your About Details</h5>
+                        <!-- Floating Labels Form -->
+                        <form class="row g-3 my-3" method="post" action="/admin/about/{{about.id}}/update"
+                            enctype="multipart/form-data">
+
+                            <div class="col-md-11">
+                                <div class="form-floating">
+                                    <input value="{{about.title}}" type="text" class="form-control" id="floatingName"
+                                        placeholder="Title" name="title">
+                                    <label for="floatingName">Title</label>
+                                </div>
+                            </div>
+
+                            <div class="col-11">
+                                <div class="form-floating">
+                                    <textarea type="text" class="form-control" placeholder="Details"
+                                        style="height: 100px;" name="details">{{about.details}}</textarea>
+                                    <label>Details</label>
+                                </div>
+                            </div>
+
+                            <div class="col-11">
+                                <div class="form-floating">
+                                    <textarea type="text" class="form-control" placeholder="Details2"
+                                        style="height: 100px;" name="details2">{{about.details2}}</textarea>
+                                    <label>Details2</label>
+                                </div>
+                            </div>
+                            
+                            <div class="col-11">
+                                <div class="form-floating">
+                                    <textarea type="text" class="form-control" placeholder="Details3"
+                                        style="height: 100px;" name="details3">{{about.details3}}</textarea>
+                                    <label>Details3</label>
+                                </div>
+                            </div>
+
+                            <div class="col-11">
+                                <div class="form-floating">
+                                    <textarea type="text" class="form-control" placeholder="Details4"
+                                        style="height: 100px;" name="details4">{{about.details4}}</textarea>
+                                    <label>Details4</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-11">
+                                <label for="floatingCity">Image</label>
+                                <div class="form-floating">
+                                    <input type="file" class="form-control" name="image">
+                                    <img src="/{{about.image}}" width="200px" alt="{{about.title}}">
+                                </div>
+                            </div>
+
+                            <div class="col-md-11">
+                                <div class="form-floating">
+                                    <input value="{{about.link}}" type="text" class="form-control" placeholder="Link"
+                                        name="link">
+                                    <label>Link</label>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Update</button>
+                                <button type="reset" class="btn btn-secondary">Clear</button>
+                            </div>
+                        </form><!-- End floating Labels Form -->
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main><!-- End #main -->
+</body>

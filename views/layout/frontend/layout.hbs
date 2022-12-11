@@ -1,0 +1,15 @@
+{{!--header from partials--}}
+<!DOCTYPE html>
+<html lang="en">
+{{>frontend/head}}
+{{>team/head}}
+{{>blog/head}}
+<body>
+    {{>frontend/_header}}
+    {{{body}}}
+    {{>frontend/__footer}}
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+    {{>frontend/script}}
+</body>
+</html>
